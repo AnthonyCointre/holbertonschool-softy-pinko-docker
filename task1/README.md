@@ -1,3 +1,5 @@
+# task1
+
 For this task, start by making a copy of our task0 directory and name it task1. Next, we want to change the Dockerfile to install Python3, pip3, and Flask. we may not have used Flask, yet, but not to worry; for this project, we will give we all of the Flask code we need to get started. We’ll validate that all have been installed correctly by running a Flask server with one endpoint that when called returns “Hello, World!”
 
 - Install python3, python3-pip, and flask
@@ -5,9 +7,9 @@ For this task, start by making a copy of our task0 directory and name it task1. 
     - Note: flask must be installed with pip3, not through apt-get
 
 If we get a This environment is externally managed error when trying to install Python packages, add the following line before calling pip on our Dockerfile
-```
-RUN rm /usr/lib/python*/EXTERNALLY-MANAGED
-```
+
+### RUN rm /usr/lib/python*/EXTERNALLY-MANAGED
+
 
 - Locally, create a Python file named api.py and paste the following Python script - it uses Flask to create one endpoint that returns “Hello, World!” when called
     - Hosting this Flask app on 0.0.0.0 instead of 127.0.0.1 means that it is reachable outside of the current machine (the current machine being a Docker container which is running inside of our laptop/desktop)

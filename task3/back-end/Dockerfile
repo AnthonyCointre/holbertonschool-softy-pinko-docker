@@ -1,12 +1,26 @@
+# Use the latest Ubuntu image as the base
 FROM ubuntu:latest
 
-RUN apt-get update \
-    && apt-get install -y python3 python3-pip
+# Update the package list
+RUN apt-get update
 
-RUN pip3 install flask flask-cors
+# Upgrade all installed packages
+RUN apt-get upgrade -y
 
+# Install Python3 and pip3
+RUN apt-get install -y python3 python3-pip
+
+# Install Flask using pip3
+RUN pip3 install flask
+
+# Install Flask-CORS using pip3
+RUN pip3 install flask-cors
+
+# Set the working directory to /app
 WORKDIR /app
 
+# Copy the api.py file to the working directory
 COPY ./api.py /app/api.py
 
+# Command to run the Flask application
 CMD ["python3", "api.py"]

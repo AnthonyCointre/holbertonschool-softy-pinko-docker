@@ -67,4 +67,3 @@ Press CTRL+C to quit
 ```
 #### Browser
 (If the image above does not load, go to https://drive.google.com/uc?id=1thSkdrvRD7MYO1A7DJx73dzA6JygUZ-b)
-

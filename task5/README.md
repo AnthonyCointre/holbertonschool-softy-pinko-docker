@@ -162,4 +162,3 @@ The following image shows the browser hitting http://localhost:80, which is the 
 Next, notice that you cannot access the front-end or back-end servers directly - you can only reach your services by going through the proxy server.
 
 #### Browser
-

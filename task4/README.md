@@ -127,3 +127,4 @@ Important keywords to have in your docker-compose.yml file:
 - ports
     - Note: when setting a port, the syntax will be HOSTPORT:CONTAINERPORT. For example, 9999:4567 would map the 4567 port inside of the Docker container to the host machine’s 9999 port. If you only supply one port number, instead of a mapping, you are only specifying an internal port that other Docker containers can reach, but they will not be mapped to any port on the host machine. If you do not map any ports, you will not be able to get past the firewall that Docker has put up. Docker uses something similar to Linux’s Uncomplicated Firewall ufw; you do not directly work with this firewall, but instead, map allowed ports in Dockerfiles or docker-compose files to allow/disallow access through certain ports.
 - depends_on
+
